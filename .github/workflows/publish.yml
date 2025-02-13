@@ -67,7 +67,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        platform: ["amd64", "i386", "ppc64le", "arm64v8", "arm32v7", "s390x", "riscv64"]
+        platform: ["arm64", "amd64", "i386", "ppc64le", "arm64v8", "arm32v7", "s390x", "riscv64"]
     steps:
       - name: Set up QEMU
         if: matrix.platform != 'amd64'
